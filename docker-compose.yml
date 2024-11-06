@@ -7,7 +7,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./src:/var/www/html
+      - ./src:/var/www/html:cached,uid=33,gid=33
     networks:
       - minha-rede
     depends_on:
@@ -22,7 +22,7 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: password
     volumes:
-      - db_data:/var/lib/mysql
+      - ./src:/var/www/html
     networks:
       - minha-rede
 
