@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: auto;
+}
+
+.table-container {
+    width: 60%;
+    font-family: "Poppins", sans-serif;
+}
+
+.tarefas-box {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.tarefas-box h1 {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+button {
+    width: 100%;
+    padding: 3px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.save {
+    background-color: #fff;
+    widows: 120px;
+    height: 30px;
+    color: #000;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.save:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+p {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.draggable {
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.draggable:hover {
+    background-color: #f0f0f0;
+
+}
+
+.drag-over {
+    border: 1px dashed #c4273f;
+
+}
+
+.high-cost {
+    background-color: #ffeb3b;
+
+}
